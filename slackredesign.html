@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Phoebe Lo - Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    <meta name="description" content="Vancouver based ux/ui designer and web developer">
+    <meta name="keywords" content="ux design, ui design, website design, web development">
+    <meta name="author" content="Phoebe Lo">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,400i,700,700i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.min.css"/>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" type="image/css" href="img/icon.png">
+    <script src="https://kit.fontawesome.com/9e8ebbf3dc.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+
+    <!-- header nav -->
+    <header class="header" id="stickyNav">
+      <div class="header-container">
+        <div class="header-items">
+          <h1 class="logotype">
+            <a href="index.html" class="logourl">Phoebe Lo</a>
+          </h1>
+        </div>
+        <div class="header-items">
+          <nav class="nav">
+            <div class="nav-container">
+              <div class="nav-items">
+                <a href="index.html">Work</a>
+              </div>
+              <div class="nav-items">
+                <a href="about.html">About</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <div class="section">
+      <div class="content-container">
+        <div class="row-box">
+          <div class="projectlist-item">
+            <h4 class="projecttype">Academic Project</h4>
+            <h1 class="project-title">Slack Redesign</h1>
+          </div>
+        </div>
+        
+        <div class="row-box">
+          <h4 class="supersubtitle">Date: Feb 2019</h4>
+          <h4 class="supersubtitle">Duration: 3 weeks</h4>
+          <h4 class="supersubtitle">Team: Rachel Bae, Jarielle Lim, Nijhum Nijhum</h4>
+          <h4 class="supersubtitle">Role: Research, UX/UI Design, User Test facilitator</h4> 
+        </div>
+        <div class="img-container">
+          <img src="img/slacklogo.png" alt="Slack Logo" class="image">
+        </div>
+
+        
+        
+        <!-- overview -->
+        <div class="row-box">
+          <h2 class="subtitle">Overview</h2>
+          <p class="paragraph">Slack redesign is an academic project focused on finding usability problems in an interface design by conducting UI usability testing and applied the research to design some potential improvements to the UI. </p>
+        </div>
+        
+        <!-- Planning and Preparing a UI Test section -->
+        <div class="row-box">
+          <h2 class="subtitle">Preparing & Conducting a UI Test</h2>
+            <p class="paragraph">In the user testing study, we prepare pre-test and post-test questionnaires for the user testing. At the pre-test questionnaires, we collect some background information about the testers, such as their age, the familiar level with Slack and what kind of team collaboration service they use. After the pre-test questionnaires, we let our testers to complete the tasks list that we create and using a <strong>think-aloud protocol</strong>. In this test, we observe the tester react during the testing and how long they took in order to complete each task. After the tasks testing, we do a post-test interview with our tester. In this part, we will ask some question to the tester, they will express their feeling/ thought about Slack, this part give us better understand about the user what they are facing during the testing, what they like/ dislike about the app.<br>
+            <br>
+            We had a total of <strong>5 participants</strong> in this testing, most of our participants are in the <strong>age range of 20 – 34</strong>. Their professions are in the design, computer science, communications and marketing area. <strong>3 out of 5 participants haven’t use Slack before, and the other two participants are notice and intermediate user of Slack.</strong>
+            </p>
+        </div>
+
+        <div class="row-box">
+          <img src="img/testingSetUp.JPG" alt="User testing setup" class="img-row">
+          <figcaption class="img-caption">
+            <strong class="img-caption-num">Fig 1</strong> User testing setup
+          </figcaption>
+        </div>
+
+        <!-- analyze finding section -->
+        <div class="row-box">
+          <h2 class="subtitle">Analyze of the Finding & User Feedback</h2>
+            <img src="img/affinityDiagram.jpg" alt="Affinity Diagram" class="img-row">
+            <figcaption class="img-caption">
+              <strong class="img-caption-num">Fig 2</strong> Affinity Diagram
+            </figcaption>
+        </div>
+        <div class="row-box">
+          <p class="paragraph">When we analyze the testing finding and users' feedback,  we came up with <strong>9 categories</strong> based on the data. And used the following severity scale to rate each category.
+            </p>
+        </div>
+
+        <div class="row-box">
+          <div class="sub-row-box">
+            <ol>
+              <li>Hidden Features</li>
+              <li>Notification</li>
+              <li>Freedom of control</li>
+              <li>Feedback</li>
+              <li>Not Apparent Interactivity</li>
+              <li>Terminology</li>
+              <li>Onboarding</li>
+              <li>Confusing purpose of icons</li>
+              <li>Placement of Features</li>
+            </ol>
+          </div>
+          <div class="sub-row-box">
+            <img src="img/severityScale.png" alt="Severity Scale" class="img-row">
+            <figcaption class="img-caption">
+              <strong class="img-caption-num">Fig 3</strong> Severity Scale
+            </figcaption>
+          </div>
+        </div>          
+
+        <div class="row-box">
+          <p class="paragraph">Considering the severity level, onboarding, favoriting a channel, hidden features and confusing purpose of the icons were the top four heuristic brokens. We decide to redesign the application in four ways:</p>
+        </div>
+        <div class="row-box">
+          <ul>
+            <li>Adding multiple workspaces easily when they are onboarding</li>
+            <li>Favoriting a channel with a better UI design</li>
+            <li>Intuitive way to provide guidance for the hidden features like customizing the text</li>
+            <li>Removing all the unrelated icons on the channel panel</li>
+          </ul>
+        </div>
+
+        <!-- Issue 1 section -->
+        <div class="row-box">
+          <h2 class="subtitle">Issue of Adding Multiple Workspaces & Suggested Improvements</h2>
+        </div>
+
+        <div class="row-box">
+          <div class="sub-row-box">
+            <h2 class="subsubtitle">Issue 1: Adding Multiple Workspaces</h2>
+            <p class="paragraph">Adding an additional workspace proved a huge hassle for many new users, especially since slack relies on the user to remember the workspace URL and hides away the sign in by email option that most users are familiar with.
+            </p>
+          </div>
+          <div class="sub-row-box">
+            <img src="img/addWorkSpaceIssue.png" alt="Issue of adding multiple workspaces" class="img-row">
+            <figcaption class="img-caption">
+              <strong class="img-caption-num">Fig 4</strong> Issue of adding multiple workspaces
+            </figcaption>
+          </div>
+        </div>
+        
+        <div class="row-box">
+          <div class="sub-row-box">
+            <h2 class="subsubtitle">Solution 1: Start with email log-in instead of URL</h2>
+            <p class="paragraph">Join a workspace starts with an Email sign-in instead of the workspace URL to make it easier for users to recall their account information in a more step-by-step approach following the Nielsen's heuristic of an <strong>aesthetic and minimalist design</strong> as well as a <strong>match between system and the real world</strong>.<br>
+            <br>
+            <strong>Click <a href="AddingWorkspaceFlow.pdf" target="_blank" class="demourl"> here</a> to view the IX flow.</strong>
+            </p>
+          </div>
+          <div class="sub-row-box">
+            <img src="img/solution1AddingWorkspace.png" alt="Solution 1 Adding Workspaces" class="img-row">
+            <figcaption class="img-caption">
+              <strong class="img-caption-num">Fig 5</strong> Solution 1 Adding Workspaces
+            </figcaption>
+            </p>
+          </div>
+        </div>
+
+        <div class="row-box">
+          <div class="sub-row-box">
+            <h2 class="subsubtitle">Solution 2: Main account for all workspaces</h2>
+            <p class="paragraph">Instead of logging into several workspaces through multiple emails, having an overarching account that contains all workspaces under multiple emails can make the whole sign in process easier. Signing into multiple devices under one account makes it easier for users to join all their workspaces quickly. This also follows Nielsen's heuristic of <strong>aesthetic and minimalist design</strong> as well as <strong>consistency and standards</strong>.</p>
+            <br>
+            <strong>Click <a href="AddingWorkspaceFlow.pdf" target="_blank" class="demourl"> here</a> to view the IX flow.</strong>
+            </p>
+          </div>
+          <div class="sub-row-box">
+            <img src="img/solution2AddingWorkspace.png" alt="Solution 2 Adding Workspaces" class="img-row">
+            <figcaption class="img-caption">
+              <strong class="img-caption-num">Fig 6</strong> Solution 2 Adding Workspaces
+            </figcaption>
+          </div>
+        </div>
+
+        <!-- issue 2 -->
+        <div class="row-box">
+          <h2 class="subtitle">Issue of Adding Channel to Favorites & Suggested Improvements</h2>
+        </div>
+
+        <div class="row-box">
+          <div class="sub-row-box">
+            <img src="img/addChannelFav.png" alt="Issue of adding a channel to favorites" class="img-row">
+            <figcaption class="img-caption">
+              <strong class="img-caption-num">Fig 7</strong> Issue of a channel to favorites
+            </figcaption>
+          </div>
+          <div class="sub-row-box">
+            <h2 class="subsubtitle">Issue 2: Adding a Channel to Favorites</h2>
+            <p class="paragraph">Favorite a channel icon is easy to get confused by the new user. The star icon is used to star a channel and post, however, the placement and icon user will mistake the star icon is used for view the starred item not to favorite the channel.
+            </p>
+          </div>
+        </div>
+
+        <div class="row-box">
+          <div class="sub-row-box">
+            <img src="img/solution1AddChannelFav.png" alt="Solution 1 Add a Channel to Favorites through edit/ right click" class="img-row">
+            <figcaption class="img-caption">
+              <strong class="img-caption-num">Fig 8</strong> Solution 1 Add a Channel to Favorites through edit/ right click
+            </figcaption>
+            </p>
+          </div>
+          <div class="sub-row-box">
+            <h2 class="subsubtitle">Solution 1: Add a Channel to Favorites through edit/ right click</h2>
+            <p class="paragraph">Add Channel to Favorite through edit/ right click instead of the star icon, users can easier to manage multiple channels or access to several options, following the Nielsen's heuristic of <strong>flexibility and efficiency of use</strong> and <strong>help and documentation</strong>.<br>
+            <br>
+            <strong>Click <a href="AddFavoriteUserWorkflow.pdf" target="_blank" class="demourl"> here</a> to view the IX flow.</strong>
+            </p>
+          </div>
+        </div>
+
+        <div class="row-box">
+          <div class="sub-row-box">
+            <img src="img/solution2AddChannelFav.png" alt="Solution 2 Add a Channel to Favorites through icon" class="img-row">
+            <figcaption class="img-caption">
+              <strong class="img-caption-num">Fig 9</strong> Solution 2 Add a Channel to Favorite through icon
+            </figcaption>
+            </p>
+          </div>
+          <div class="sub-row-box">
+            <h2 class="subsubtitle">Solution 2: Add a Channel to Favorites through icon</h2>
+            <p class="paragraph">Add Channel to Favorite through heart icon, users can easier to identify the icon and add channel to favorite, following the Nielsen's heuristic of <strong>aesthetic and minimalist design</strong>.<br>
+            <br>
+            <strong>Click <a href="AddFavoriteUserWorkflow.pdf" target="_blank" class="demourl"> here</a> to view the IX flow.</strong>
+            </p>
+          </div>
+        </div>
+
+        <!-- issue 3 -->
+        <div class="row-box">
+          <h2 class="subtitle">Issue of Formatting Text & Suggested Improvements</h2>
+        </div>
+
+        <div class="row-box">
+          <div class="sub-row-box">
+            <h2 class="subsubtitle">Issue 3: Formatting Text</h2>
+            <p class="paragraph">The bold, italics and strikethrough options appear only when you start typing. The user has to follow a certain format to be able to italicize, bold or strikethrough a text which gives an impression of coding. 
+            </p>
+          </div>
+          <div class="sub-row-box">
+            <img src="img/formattingTextIssue.png" alt="Issue of Formatting Text" class="img-row">
+            <figcaption class="img-caption">
+              <strong class="img-caption-num">Fig 10</strong> Issue of formatting text
+            </figcaption>
+          </div>
+        </div>
+
+        <div class="row-box">
+          <div class="sub-row-box">
+            <h2 class="subsubtitle">Solution 1: Making the italics option clickable</h2>
+            <p class="paragraph">By making the text formatting option clickable, the italics option would be clearly visible to the users. It would also give the user to easily unclick the button if they don’t want certain text to be italicized, following Nielsen’s Heuristic <strong>flexibility and efficiency</strong> of use.<br>
+            <br>
+            <strong>Click <a href="FormattingTextFlow.pdf" target="_blank" class="demourl"> here</a> to view the IX flow.</strong>
+            </p>
+          </div>
+          <div class="sub-row-box">
+            <img src="img/solution1FormattText.png" alt="Solution 1 Making the italics option clickable" class="img-row">
+            <figcaption class="img-caption">
+              <strong class="img-caption-num">Fig 11</strong> Solution 1 Making the italics option clickable
+            </figcaption>
+            </p>
+          </div>
+        </div>
+
+        <div class="row-box">
+          <div class="sub-row-box">
+            <h2 class="subsubtitle">Solution 2: Adding ‘T’ icon for text format</h2>
+            <p class="paragraph">The second solution is adding a “T” for text format beside the icons in the text box to italicize text. When the user clicks the “T” he/she gets a pop up that gives them the option to format their text. This follows the Nielsen’s Heuristic <strong>consistency and standard</strong> because it stays consistent with the other icons in the text panel.<br>
+            <br>
+            <strong>Click <a href="FormattingTextFlow.pdf" target="_blank" class="demourl"> here</a> to view the IX flow.</strong>
+            </p>
+          </div>
+          <div class="sub-row-box">
+            <img src="img/solution2FormattText.png" alt="Solution 2 Adding ‘T’ icon for text format" class="img-row">
+            <figcaption class="img-caption">
+              <strong class="img-caption-num">Fig 12</strong> Solution 2 Adding ‘T’ icon for text format
+            </figcaption>
+            </p>
+          </div>
+        </div>
+
+        <!-- issue 4 -->
+        <div class="row-box">
+          <h2 class="subtitle">Issue of Accessing The Channel Settings & Suggested Improvements</h2>
+        </div>
+
+        <div class="row-box">
+          <div class="sub-row-box">
+            <img src="img/accessingChannelSettingIssue.png" alt="Issue of accessing the channel settings" class="img-row">
+            <figcaption class="img-caption">
+              <strong class="img-caption-num">Fig 13</strong> Issue of accessing the channel settings
+            </figcaption>
+          </div>
+          <div class="sub-row-box">
+            <h2 class="subsubtitle">Issue 4: Accessing The Channel Settings</h2>
+            <p class="paragraph">Icons on the top left corner are for global options instead of channel options. However, because of the placement, users often mistook them for channel options.
+            </p>
+          </div>
+        </div>
+
+        <div class="row-box">
+          <div class="sub-row-box">
+            <img src="img/solution1ChannelSetting.png" alt="Solution 1 Separating the unrelated items" class="img-row">
+            <figcaption class="img-caption">
+              <strong class="img-caption-num">Fig 14</strong> Solution 1 Separating the unrelated items
+            </figcaption>
+            </p>
+          </div>
+          <div class="sub-row-box">
+            <h2 class="subsubtitle">Solution 1: Separating the unrelated items</h2>
+            <p class="paragraph">This first solution, we have changed the location of the Activity, Starred Items and More option icons to the bottom right corner of the purple menu bar. This will accelerate the use of three icons without any confusion. This follows Nielsen’s <strong>aesthetic and minimalist design</strong> and <strong>flexibility and efficiency of use</strong>.<br>
+            <br>
+            <strong>Click <a href="AccessChannelSettingWorkflow.pdf" target="_blank" class="demourl"> here</a> to view the IX flow.</strong>
+            </p>
+          </div>
+        </div>
+
+        <div class="row-box">
+          <div class="sub-row-box">
+            <img src="img/solution2ChannelSetting.png" alt="Solution 2 Grouping with All Threads" class="img-row">
+            <figcaption class="img-caption">
+              <strong class="img-caption-num">Fig 15</strong> Solution 2 Grouping with All Threads
+            </figcaption>
+            </p>
+          </div>
+          <div class="sub-row-box">
+            <h2 class="subsubtitle">Solution 2: Grouping with all threads</h2>
+            <p class="paragraph">The second solution, we added Activity and Starred Items under the All Threads because all three are related to the personal use. We changed the location for the three horizontal dots, the more option, on the bottom right corner of the purple menu bar to minimize icons on the channel panel. This will allow users to access the channel settings more easily. This follows Nielsen's heuristic of <strong>flexibility and efficiency of use</strong>.<br>
+            <br>
+            <strong>Click <a href="AccessChannelSettingWorkflow.pdf" target="_blank" class="demourl"> here</a> to view the IX flow.</strong>
+            </p>
+          </div>
+        </div>
+
+        <!-- reflection section -->
+        <div class="row-box">
+          <h2 class="subtitle">Reflection</h2>
+            <p class="paragraph">Through this project, I learned lots of useful skills that allows me to apply it in my future UX project. First, I learned how best to develop usability study tasks, during the test, how to interact with study participants and document theirs react. Second, the finding from the user test let me understand what problems users face with the interface. Third, based on the result we found and made improvements to the interface by utilizing <a href="https://www.nngroup.com/articles/ten-usability-heuristics/">Heuristic evaluation</a>.</p>
+        </div>
+
+        <!-- separate section -->
+        <hr>
+        <!-- project list section -->
+        <div class="projectlist-box">
+          <div class="projectlist-item">
+            <h4 class="project-description">UX/UI</h4>
+            <h1 class="project-header"><a class="box-heading" href="stillfresh.html">StillFresh</a></h1>
+          </div>
+          <div class="projectlist-item">
+            <h4 class="project-description">Full-stack web development</h4>
+            <h1 class="project-header"><a class="box-heading" href="androiddaily.html">AndroidDaily</a></h1>
+          </div>
+          <div class="projectlist-item">
+            <h4 class="project-description">Front-end web development</h4>
+            <h1 class="project-header"><a class="box-heading" href="milo.html">MILO.</a></h1>
+          </div>
+          <div class="projectlist-item">
+            <h4 class="project-description">Graphic design</h4>
+            <h1 class="project-header"><a class="box-heading" href="minus.html">MINUS Magazine</a></h1>
+          </div> 
+        </div>
+
+        <!-- footer -->
+        <div class="pagefooter">
+          <p class="pfooter">Designed & Developed &copy; Phoebe Lo 2020</p>
+        </div> 
+
+        <!-- go top button -->
+        <a href="#" class="gotopbtn"><i class="fas fa-arrow-up"></i></a>
+
+      <!-- close content-container class -->
+      </div>
+    <!-- close section class -->
+    </div>
+
+  </body>
+</html>

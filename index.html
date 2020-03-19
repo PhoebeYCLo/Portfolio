@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Phoebe Lo - Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    <meta name="description" content="Vancouver based ux/ui designer and web developer">
+    <meta name="keywords" content="ux design, ui design, website design, web development">
+    <meta name="author" content="Phoebe Lo">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,400i,700,700i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.min.css"/>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" type="image/css" href="img/icon.png">
+  </head>
+
+  <body>
+
+    <!-- header nav -->
+    <header class="header" id="stickyNav">
+    <div class="header-container">
+      <div class="header-items">
+        <h1 class="logotype">
+          <a href="index.html" class="logourl">Phoebe Lo</a>
+        </h1>
+      </div>
+      <div class="header-items">
+        <nav class="nav">
+          <div class="nav-container">
+            <div class="nav-items">
+              <a href="index.html">Work</a>
+            </div>
+            <div class="nav-items">
+              <a href="about.html">About</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+    <div id="fullPage">
+      <div class="section s1">
+        <!-- <h1>first section</h1> -->
+        <div class="project-container">
+          <div class="row">
+            <section class="intro-container">
+              <h1 class="hello-text">Hello, I'm Phoebe</h1>
+              <div class="intro-details">
+                <p class="personinfo-text">
+                  I'm a <span class="job-type">full-stack designer</span> with a unique skill-set that spans various disciplines from <span class=job-type>UX/UI to web development.</span>
+                </p>
+                <button class="btn-arrow">
+                  <a href="about.html">
+                    <p class="btn-text">about me</p>
+                    <img src="img/right-arrow.png">
+                  </a>
+                </button>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+
+      <div class="section s2">
+        <div class="project-container">
+          <div class="row">
+            <div class="box-container left">
+              <div class="box-body">
+                <p class="box-description">UX/UI</p>
+              </div>
+              <a class="box-heading" href="stillfresh.html">StillFresh</a>
+            </div>
+
+            <div class="box-container right">
+              <a href="stillfresh.html">
+                <img src="img/stillFresh.png" alt="StillFresh" class="img-fluid">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section s3">
+        <div class="project-container">
+          <div class="row">
+            <div class="box-container left">
+              <div class="box-body">
+                <p class="box-description">UX/UI</p>
+              </div>
+              <a class="box-heading" href="slackredesign.html">Slack Redesign</a>
+            </div>
+
+            <div class="box-container right">
+              <a href="slackredesign.html">
+                <img src="img/slacklogo.png" alt="Slack" class="img-fluid">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section s4">
+        <div class="project-container">
+          <div class="row">
+            <div class="box-container left">
+              <div class="box-body">
+                <p class="box-description">Full-stack web development</p>
+              </div>
+              <a class="box-heading" href="androiddaily.html">AndroidDaily</a>
+            </div>
+
+            <div class="box-container right">
+              <a href="androiddaily.html">
+                <img src="img/androiddailyDesktop.jpg" alt="AndroidDaily" class="img-fluid">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section s5">
+        <!-- <h1>second section</h1> -->
+        <div class="project-container">
+          <div class="row">
+            <div class="box-container left">
+              <div class="box-body">
+                <p class="box-description">Front-end web development</p>
+              </div>
+              <a class="box-heading" href="milo.html">MILO.</a>
+            </div>
+
+            <div class="box-container right">
+              <a href="milo.html">
+                <img src="img/miloDevices.jpg" alt="MILO" class="img-fluid">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section s6">
+        <div class="project-container">
+          <div class="row">
+            <div class="box-container left">
+              <div class="box-body">
+                <p class="box-description">Graphic design</p>
+              </div>
+              <a class="box-heading" href="minus.html">MINUS Magazine</a>
+            </div>
+
+            <div class="box-container right">
+              <a href="minus.html">
+                <img src="img/minus_magazine2.jpg" alt="MINUS Magazine" class="img-fluid">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>   
+
+    <!-- close full page  -->
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+      <p class="pfooter">Designed & Developed &copy; Phoebe Lo 2020</p>
+    </div>   
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.min.js"></script>
+
+    <script>
+      new fullpage('#fullPage', {
+        autoScrolling: true,
+        navigation: true
+      })
+    </script>
+
+  </body>
+</html>

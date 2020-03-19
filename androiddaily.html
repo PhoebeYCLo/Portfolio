@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Phoebe Lo - Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    <meta name="description" content="Vancouver based ux/ui designer and web developer">
+    <meta name="keywords" content="ux design, ui design, website design, web development">
+    <meta name="author" content="Phoebe Lo">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,400i,700,700i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.min.css"/>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" type="image/css" href="img/icon.png">
+    <script src="https://kit.fontawesome.com/9e8ebbf3dc.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+
+    <!-- header nav -->
+    <header class="header" id="stickyNav">
+      <div class="header-container">
+        <div class="header-items">
+          <h1 class="logotype">
+            <a href="index.html" class="logourl">Phoebe Lo</a>
+          </h1>
+        </div>
+        <div class="header-items">
+          <nav class="nav">
+            <div class="nav-container">
+              <div class="nav-items">
+                <a href="index.html">Work</a>
+              </div>
+              <div class="nav-items">
+                <a href="about.html">About</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <div class="section">
+      <div class="content-container">
+        <div class="row-box">
+          <div class="projectlist-item">
+            <h4 class="projecttype">Academic Project</h4>
+            <h1 class="project-title">AndroidDaily</h1>
+          </div>
+        </div>
+        <!-- <div class="row-box">
+          <h3 class="subsubtitle">Developed a web application that helps Android users to discover useful mobile apps.</h3>
+        </div> -->
+        
+        <div class="row-box">
+          <h4 class="supersubtitle">Date: Fall 2019</h4>
+          <h4 class="supersubtitle">Duration: 4 weeks</h4>
+          <h4 class="supersubtitle">Role: Research, Visual Design, Web Development</h4> 
+        </div>
+        <div class="img-container">
+          <img src="img/androiddailyDesktop.jpg" alt="AndroidDaily website homepage onscreen" class="image">
+        </div>
+
+        
+        
+        <!-- overview -->
+        <div class="row-box">
+          <h2 class="subtitle">Overview</h2>
+          <p class="paragraph">Android Daily is a web application that helps users discover cool and useful apps. People visit the website to read app reviews and grab new ones to bring out the best experience for their devices.</p>
+        </div>
+        
+        <!-- problem section -->
+        <div class="row-box">
+          <h2 class="subtitle">The Problem</h2>
+            <p class="paragraph">Nowadays, there were over <a href="https://www.statista.com/statistics/276703/android-app-releases-worldwide/" target="_blank">6,000</a> apps added on Google Store per day. Sometimes people download apps based on the recommended list or the top chart list that create by Play Store. However, there are lots of apps that are underrated and are not included in those lists, which may lead users to miss a chance to download the app that fits their needs. </p>
+        </div>
+
+        <!-- exploration section -->
+        <div class="row-box">
+          <h2 class="subtitle">Exploration</h2>
+            <p class="paragraph">I first started by designing the structure and navigation model of the website. As the sitemap is shown below, each page is coordinated with different functionalities. The website is designed for both visitors and registered members: both visitors and registered members can browse and search apps with filter options. Search criteria include price and genres. In order to ensure the credibility of the reviews, only registered members are allowed to give reviews to apps. Also, the members can save the apps to their personal favorite apps list.  
+            </p>
+        </div>
+        <div class="row-box">
+          <img src="img/androiddailySitemap.png" alt="AndroidDaily sitemap" class="img-row">
+          <figcaption class="img-caption">
+            <strong class="img-caption-num">Fig 1</strong> AndroidDaily sitemap
+          </figcaption>
+        </div>
+
+        <!-- database design section -->
+        <div class="row-box">
+          <h2 class="subtitle">Database Design</h2>
+            <div class="sub-row-box">
+              <p class="paragraph">I imported data from the Google Play Store that is relevant to the app's information, such as name, description, updated date, app version, and price. I created an ER diagram that shows different entities, properties, and relationships. And used it as the blueprint when creating data tables in phpMyAdmin.
+              </p>
+            </div>
+            <div class="sub-row-box">
+              <img src="img/datatable.png" alt="Table Design" class="img-row">
+              <figcaption class="img-caption">
+                <strong class="img-caption-num">Fig 2</strong> Data table design 
+              </figcaption>
+            </div>          
+        </div>
+
+        <div class="row-box">
+          <img src="img/ERDiagram.jpg" alt="ER Diagram" class="img-row">
+          <figcaption class="img-caption">
+            <strong class="img-caption-num">Fig 3</strong> ER diagram 
+          </figcaption>
+        </div>
+
+        <!-- development section -->
+        <div class="row-box">
+          <h2 class="subtitle">Development process</h2>
+            <p class="paragraph">When building this website, I applied techniques (PHP, MySQL, AJAX) learned from the course to support the backend server of AndroidDaily. For the login and register system, I used sessions to store and carry user information between pages. For the search function, I used user inputs to perform dynamic queries and get the result from the MySQL database. I also created commenting and saving favorite apps system using PHP and JavaScript, when users submit their feedback, the call will be realized by AJAX without reloading the whole page.</p>
+        </div>
+
+        <div class="row-box">
+          <video class="project-video desktop" autoplay muted controls loop>
+            <source src="img/AndroidDaily.mov" type="video/mp4">
+          </video>
+          <figcaption class="img-caption">
+            <strong class="img-caption-num">Fig 4</strong> AndroidDaily website
+          </figcaption>
+        </div>
+
+        <!-- reflection section -->
+        <div class="row-box">
+          <h2 class="subtitle">Reflection</h2>
+            <p class="paragraph">Through the development process, I was able to apply conceptual knowledge by programming the website using PHP, AJAX, and MySQL database. And I had a better understanding of the client-server model and request-response. For the next steps, I would like to add more features on the site, such as rating or recommendation to the users.</p>
+        </div>
+
+        <!-- separate section -->
+        <hr>
+        <!-- project list section -->
+        <div class="projectlist-box">
+          <div class="projectlist-item">
+            <h4 class="project-description">UX/UI</h4>
+            <h1 class="project-header"><a class="box-heading" href="stillfresh.html">StillFresh</a></h1>
+          </div>
+          <div class="projectlist-item">
+            <h4 class="project-description">UX/UI</h4>
+            <h1 class="project-header"><a class="box-heading" href="slackredesign.html">Slack Redsign</a></h1>
+          </div>
+          <div class="projectlist-item">
+            <h4 class="project-description">Front-end web development</h4>
+            <h1 class="project-header"><a class="box-heading" href="milo.html">MILO.</a></h1>
+          </div>
+          <div class="projectlist-item">
+            <h4 class="project-description">Graphic design</h4>
+            <h1 class="project-header"><a class="box-heading" href="minus.html">MINUS Magazine</a></h1>
+          </div> 
+        </div>
+
+        <!-- footer -->
+        <div class="pagefooter">
+          <p class="pfooter">Designed & Developed &copy; Phoebe Lo 2020</p>
+        </div> 
+
+        <!-- go top button -->
+        <a href="#" class="gotopbtn"><i class="fas fa-arrow-up"></i></a>
+
+      <!-- close content-container class -->
+      </div>
+    <!-- close section class -->
+    </div>
+
+  </body>
+</html>
