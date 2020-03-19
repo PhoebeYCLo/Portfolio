@@ -1,0 +1,461 @@
+
+.header-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+	align-content: flex-start;
+	padding: 0.5rem 1.8rem;
+	position: relative;
+	z-index: 1;
+}
+
+.nav-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-items: center;
+	align-content: flex-start;
+}
+
+.logotype{
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 0.08rem;
+  	font-size: 1.3rem;
+	padding: 1rem;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+.logourl{
+	color: black;
+}
+
+.nav {
+	text-transform: lowercase;
+	font-size: 0.85rem;
+	letter-spacing: 0.05rem;
+	text-transform: uppercase;
+}
+
+.nav a {
+	color: black;
+	margin: 1rem;
+	border-color: white;
+}
+
+.nav a:active, .nav a:hover, .nav a:focus {
+	opacity: 0.5;
+	transition: opacity 0.5s;
+}
+
+a {
+	color: #555;
+	text-decoration: none;
+}
+
+body{
+	font-family: 'Space Mono', monospace;
+	margin: 0;
+}
+
+/* intro*/
+.hello-text{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: Bold;
+	font-size: 2.8rem;
+	text-transform: uppercase;
+}
+
+.personinfo-text{
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	max-width: 800px;
+}
+
+.job-type{
+	font-weight: Bold;
+}
+
+.btn-arrow{
+	background: none;
+	border: none;
+	margin-top: 0.5rem;
+	padding-left: 0;
+}
+
+.btn-arrow img{
+	width: 2vw;
+	height: auto;
+	margin-left: 0.5vw;
+}
+
+.btn-arrow > a{
+	color: #000000;
+}
+
+.btn-text{
+	display: inline;
+	font-size: 1.3rem;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.btn-text:hover{
+	transition: margin .2s;
+	margin-right: 0.5rem;
+}
+
+.link-container{
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	left: 0;
+	top: 0;
+}
+
+
+/*project*/
+.project-container{
+	width: 80%;
+	padding: 1rem;
+	margin: auto;
+	margin-top: -10.2rem;
+}
+
+.box-container{
+	float: left;
+	width: 50%;
+}
+
+.row{
+  	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0rem 4rem;
+	/*max-width: 1000px;*/
+}
+
+
+
+a.box-heading{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 3.5rem;
+	font-weight: Bold;
+	letter-spacing: 0.3rem;
+	text-align: right;
+	color: transparent;
+	-webkit-text-stroke: 1.8px black;
+}
+
+a.box-heading:hover{
+	color: rgb(0,0,0);
+	transition: color 0.2s ease in;
+}
+
+.box-container{
+	max-width: 50%;
+	padding: 1rem;
+}
+
+.box-description{
+	margin-bottom: 0;
+}
+
+.img-fluid{
+	max-width: 600px;
+	vertical-align: middle;
+}
+
+.box-description{
+	text-transform: uppercase;
+	color: #555;
+}
+
+.name a:hover{
+	opacity: 0.5;
+	transition: opacity 0.5s;
+}
+
+/*project detail page*/
+.content-container{
+	position: relative;
+	width: 55%;
+	margin: auto;
+	padding: auto;
+}
+
+.row-box{
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap; 
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 0.8rem;
+}
+
+.project-title{
+	font-size: 2.5rem;
+	font-family: 'Montserrat', sans-serif;
+	margin-top: 0;
+	margin-bottom: 0.2rem;
+}
+
+.projecttype{
+	margin-bottom: 0;
+	font-size: 0.875rem;
+}
+
+.subtitle{
+	width: 100%;
+	font-size: 1.5rem;
+	/*font-weight: 800;*/
+	letter-spacing: 0.08rem;
+	margin-bottom: 0.3rem;
+}
+
+.subsubtitle{
+	font-size: 1.25rem;
+	font-weight: 600; 
+}
+
+.supersubtitle{
+	font-size: 0.8rem;
+	color: #555;
+	font-weight: 400;
+}
+
+.image{
+	width: 100%;
+}
+
+.sub-row-box{
+	width: 45%;
+	margin: 0.5rem 0.2rem;
+}
+
+.img-row{
+	width: 100%;
+}
+
+.grey{
+	color: #555;
+}
+
+.button-container{
+	display: flex;
+	justify-content: flex-end;
+	margin: 1rem 0rem; 
+	font-size: 1.8rem;
+}
+
+a.next-button:hover{
+	opacity: 0.5;
+	transition: opacity 0.5s;
+}
+
+.img-caption{
+	text-align: center;
+	color: #555;
+	font-size: 0.8rem;
+	margin-top: 0;
+}
+
+.highlight{
+	font-weight: 800;
+}
+
+.email-link{
+  	color: #555;
+  	border-bottom: 0.125rem solid #222;
+}
+
+a.email-link:hover{
+  	opacity: 0.5;
+	transition: opacity 0.5s;
+}
+
+.message-container{
+  	position: absolute;
+  	bottom: 0;
+}
+
+.highlightText{
+	font-weight: 800;
+}
+
+.paragraph{
+	max-width: 50em;
+	line-height: 1.8em;
+}
+
+a.demourl{
+	text-decoration: underline;
+}
+
+a.demourl:hover, a.demourl:focus{
+	opacity: 0.5;
+	transition: opacity 0.5s;
+}
+
+.project-video{
+	width: 100%;
+  	height: auto;
+}
+
+/* unorder list style */
+li{
+	margin: 0.25rem 0rem;
+}
+
+/* project list */
+.project-description{
+	font-size: 0.9rem;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin-bottom: 0;
+	color: #555;
+}
+
+.project-header{
+	margin-top: 0;
+}
+
+/* footer */
+.footer{
+	padding: 0.5rem;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
+
+.pagefooter{
+	padding: 0.5rem;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
+
+.pfooter{
+	font-size: 0.75rem;
+}
+
+/* got top button */
+.gotopbtn{
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	background: #555;
+	bottom: 40px;
+	right: 50px;
+	text-decoration: none;
+	text-align: center;
+	line-height: 50px;
+	color: white;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    background-color: #ebebeb;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #6d6d6d; 
+}
+
+/* text selected*/
+::selection {
+    background-color: #222;
+    color: white;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1280px){
+	.row{
+		flex-wrap: wrap;
+		padding: 0;
+	}
+
+	.img-fluid{
+		max-width: 450px;
+	}
+}
+
+@media only screen and (max-width: 900px){
+	.row-box{
+		display: block;
+	}
+	.sub-row-box{
+		width: 100%;
+	}
+	.content-container{
+		width: 70%;
+	}
+}
+
+@media only screen and (max-width: 768px){
+	.btn-arrow img{
+		width: 4vw;
+		height: 2vw;
+	}
+	.row{
+		display: flex;
+		margin: 0;
+		align-items: initial;
+		padding: 0;
+	}
+	a.box-heading{
+		font-size: 2.5rem;
+	}
+	.img-fluid{
+		max-width: 320px;
+	}
+	.box-description{
+		max-width: 260px;
+	}
+}
+
+@media only screen and (max-width: 520px){
+	.row{
+		justify-content: initial;
+	}
+}
+
+@media only screen and (max-width: 480px){
+	.header-container{
+		padding: 0.25rem 1rem;
+	}
+	.logotype{
+		font-size: 1.15rem;
+	}
+	.project-container{
+		width: auto;
+	}
+	.hello-text{
+		font-size: 2rem;
+	}
+	.personinfo-text{
+		font-size: 1rem;
+	}
+	a.box-heading{
+		font-size: 2.1rem;
+	}
+	.img-fluid{
+		max-width: 240px;
+	}
+	.content-container{
+		width: 80%;
+	}
+} 
+
